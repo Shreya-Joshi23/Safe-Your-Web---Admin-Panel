@@ -1,0 +1,31 @@
+import React from "react";
+import { FaUsers } from "react-icons/fa6";
+import { GrNext } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
+const DashCards = ({ heading, numbers, nexPage, icons }) => {
+  return (
+    <>
+      <div className="border-2 px-4 py-2 rounded-md flex gap-10 flex-col ">
+        <div className="flex items-center justify-between ">
+          <div>
+            <h1 className="font-bold text-xl"> {heading}</h1>
+            <p className=" text-green-500"> {numbers}</p>
+          </div>
+          <div>{icons}</div>
+        </div>
+        <div className="flex items-center justify-between">
+          <div>
+            <h1> {nexPage}</h1>
+          </div>
+          <div>
+            <NavLink to="/user">
+              <GrNext className="text-3xl" />
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default DashCards;

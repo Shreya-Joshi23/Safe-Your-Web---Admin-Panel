@@ -3,6 +3,7 @@ import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route />
+        <Route path="/" element={<Dashboard />} />
       </Routes>
     </>
   );

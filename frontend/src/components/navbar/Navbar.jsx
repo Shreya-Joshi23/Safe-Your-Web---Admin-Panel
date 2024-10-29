@@ -15,18 +15,18 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className=" bg-[#8585AD]  sticky top-0 right-0">
-        <div className=" flex items-center justify-between px-8 py-2">
+      <div className=" bg-[#8585AD]  sticky top-0 right-0 shadow-lg ">
+        <div className=" flex items-center justify-between  px-8 py-2">
           <div className=" flex items-center gap-3">
             <img src={logo} alt="logo" className="w-10" />
             {open ? (
               <RxCross1
-                className="text-2xl cursor-pointer"
+                className="text-2xl cursor-pointer md:hidden"
                 onClick={() => toggleSidebar(!open)}
               />
             ) : (
               <RxHamburgerMenu
-                className="text-2xl cursor-pointer"
+                className="text-2xl cursor-pointer md:hidden"
                 onClick={() => toggleSidebar(!open)}
               />
             )}
@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Sidebar open={open} toggleSidebar={toggleSidebar} />
+      <Sidebar open={open} setOpen={setOpen} />
     </>
   );
 };
