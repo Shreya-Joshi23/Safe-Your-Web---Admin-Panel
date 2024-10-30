@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const DashCards = ({ heading, numbers, nexPage, icons }) => {
   return (
     <>
-      <div className="border-2 px-4 py-2 rounded-md flex gap-10 flex-col ">
+      <div className="border-2 px-4 py-2 rounded-md flex md:gap-10 gap-7 flex-col md:w-[400px] w-[250px] md:flex-wrap ">
         <div className="flex items-center justify-between ">
           <div>
             <h1 className="font-bold text-xl"> {heading}</h1>
