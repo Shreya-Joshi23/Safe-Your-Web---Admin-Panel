@@ -37,10 +37,10 @@ const Sidebar = ({ open, setOpen }) => {
             className="flex items-center gap-4"
             onClick={() => setOpen(false)}
           >
-            <NavLink to="/user">
+            <NavLink to="/users">
               <img src={user} alt="user" className="rounded-md w-8" />
             </NavLink>
-            <NavLink to="/user">
+            <NavLink to="/users">
               <span className="">Users</span>
             </NavLink>
           </div>

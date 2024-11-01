@@ -18,7 +18,7 @@ const DashCards = ({ heading, numbers, nexPage, icons }) => {
             <h1> {nexPage}</h1>
           </div>
           <div>
-            <NavLink to="/user">
+            <NavLink to="/users">
               <GrNext className="text-3xl" />
             </NavLink>
           </div>
